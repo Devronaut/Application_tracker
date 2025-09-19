@@ -1,19 +1,21 @@
 {
   "expo": {
-    "name": "resume-tracker-app",
+    "name": "Resume Tracker",
     "slug": "resume-tracker-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "owner": "tanmoy_22",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.resumetracker.app"
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +23,22 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.resumetracker.app",
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [],
+    "scheme": "resume-tracker",
+    "extra": {
+      "eas": {
+        "projectId": "a07e0e0a-fdfd-44b4-bb91-4f7b05b6d331"
+      }
     }
   }
 }
